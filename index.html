@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="assets/imagenes/iconoacademlo.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academlo Ecommerce - Laura Sánchez</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script src="assets/js/tienda.js" type="module" defer></script>
+    <script src="assets/js/categoria.js"></script>
+  </head>
+  <body class="body">
+    <div id="app">
+      <header class="headerPrincipal" class="header_show">
+        <nav class="navbar container">
+          <a href="#home" class="navbar_logo">
+            <img class="nav_logo-icon"src="assets/imagenes/iconoacademlo.png" alt="">              
+            <span>STORE</span>
+          </a>
+
+          <ul class="navbar_menu" id="navbarMenu">
+            <li>
+              <a class="li_home link__active" href="#home" data-section="home"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a class="li_product">PRODUCTS</a>
+            </li>
+          </ul>
+
+          <div class="navbar__icons">
+            <i class="bx bx-moon" id="iconTheme"></i>
+            <i class="bx bx-shopping-bag" id="iconShowCart">
+              <div class="totalAmountProducts"><span>0</span></div>
+            </i>
+            <i class="bx bxs-dashboard handleIconNavbar" id="iconShowMenu"></i>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <!-- SECCIÓN HOME -->
+        <section class="home" id="home">
+          <div class="home_header">
+            <div></div>
+            <div class="home_header-img">
+              <img src="assets/imagenes/sweater2.png" alt="Imagen" />
+            </div>
+          </div>
+
+          <div class="home_body">
+            <h2 class="home_body-title">New Sweatshirt COLLECTIONS 2022</h2>
+            <p class="home_body-paragragh">
+              Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+              imported from the 2022 series, with a modern design.
+            </p>
+            <p class="home_body-price">$14.00</p>
+            <a class="home_body-btn">Show more</a>
+          </div>
+        </section>
+
+        <!-- Contenedor productos-->
+
+        <section class="content_products" id="products">
+          <div class="content_filter">
+            <div class="filter filter__active" data-filter="all">
+              <p>Show all</p>
+              <p>Show all products</p>
+            </div>
+            <div class="filter" data-filter=".shirt">
+              <p>Shirt</p>
+              <p></p>
+            </div>
+            <div class="filter" data-filter=".hoddie">
+              <p>Hoddie</p>
+              <p></p>
+            </div>
+            <div class="filter" data-filter=".sweater">
+              <p>Sweater</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="products"></div>
+        </section>
+
+        <!-- Contenedor carrito -->
+
+        <div class="contentCart">
+          <i class="bx bx-x" id="iconCloseCart"></i>
+          <div class="contentCart__products"></div>
+          <div class="contentCart__total">
+            <div class="contentCart__total--buy">
+              <p class="numberItems"></p>
+              <p class="totalPrice"></p>
+            </div>
+            <button class="btn__buy">acquisition</button>
+          </div>
+        </div>
+        
+        <div class="modalProduct"></div>
+
+        <!-- Cargar-->
+        <div class="load" id="load">          
+          <img class="load__gif" src="assets/imagenes/logo_nombre.png" alt="">
+        </div>
+      </div>      
+      <footer>
+        <section class="content_footer container">
+          <div class="footer_info">
+            <h3 class="footer_info-title">Our information</h3>
+            <ul>
+              <li>
+                <a href="#home"
+                  >Quito - Ecuador</a
+                >
+              </li>  
+            </ul>
+          </div>
+          <div class="footer_info">
+            <h3 class="footer_info-title">About Us</h3>
+            <ul>
+              <li><a href="#home">Support Center</a></li>
+              <li><a href="#home">Customer Support</a></li>
+              <li><a href="#home">About Us</a></li>
+              <li><a href="#home">Copy Right</a></li>
+            </ul>
+          </div>
+          <div class="footer_info">
+            <h3 class="footer_info-title">Product</h3>
+            <ul>
+              <li><a href="#home">Hoodies</a></li>
+              <li><a href="#home">Shirts</a></li>
+              <li><a href="#home">About Us</a></li>
+              <li><a href="#home">Sweatshirts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_info">
+            <h3 class="footer_info-title">Social</h3>
+            <ul class="footer_link-social">
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100008016307831"
+                  target="_blank"
+                >
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@sofiaaguilar2207?is_from_webapp=1&sender_device=pc" target="_blank">
+                  <i class="bx bxl-tiktok"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/lauraessanchez/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                  target="_blank"
+                >
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <p>
+          <b
+            ><span class="footer-titles-1">Nombre:</span> <a class="footer-contact-link" href="https://github.com/lauraesthelasanchez" target="_blank">Laura Esthela Sánchez Mazón                   </a>
+            <span class="footer-titles-2">Correo:</span> <a class="footer-contact-link" href="mailto:lauraessanhez@gmail.com">lauraessanchez@gmail.com</a>
+            <span class="footer-titles-3">Repositorio:</span>
+            <a
+              class="footer-contact-link"
+              href="https://github.com/lauraesthelasanchez"
+              target="_blank"
+              >Click aqui para ir</a
+            ></b
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
